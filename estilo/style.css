@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+/* CONFIGURAÇÕES GLOBAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CORPO */
+body {
+    background-color: #fff;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Rubik", sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+/* SEÇÃO BEM VINDO */
+section.secao-bem-vindo {
+    background-color: #fff;
+    box-shadow: 0 7px 30px -10px rgb(150 170 180 / 50%);
+    padding: 2rem;
+    width: 400px;
+    border-radius: 10px;
+}
+
+section.secao-bem-vindo .login-entrada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.secao-bem-vindo .login-entrada .logo-entrar {}
+
+section.secao-bem-vindo .login-entrada .logo-entrar i {
+    font-size: 2em;
+    color: #4d61fc;
+    margin-bottom: 0.5rem;
+}
+
+section.secao-bem-vindo .login-entrada h2 {
+    color: #2f2f2f;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+section.secao-bem-vindo .login-entrada p {
+    color: #2f2f2f;
+    font-size: 1.1em;
+    margin-bottom: 2rem;
+}
+
+/* FORMULÁRIO ENTRAR CONTA */
+form.entrar-conta {}
+
+form.entrar-conta > .campo-input {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+form.entrar-conta > .campo-input > label {
+    display: block;
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 0.3rem;
+}
+
+form.entrar-conta > .campo-input input {
+    background-color: #f1f1f1;
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    padding: 0.7rem 1rem;
+    
+}
+
+form.entrar-conta > .campo-input label.logo {
+    color: #4d61fc;
+    position: absolute;
+    top: 2.2rem;
+    right: 1rem;
+}
+
+form.entrar-conta > .campo-input label.logo i {
+    font-size: 1.1em;
+}
+
+form.entrar-conta fieldset.campo-esqueceu-senha {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form.entrar-conta fieldset.campo-esqueceu-senha .campo-input {}
+
+form.entrar-conta fieldset.campo-esqueceu-senha .campo-input input {}
+
+form.entrar-conta fieldset.campo-esqueceu-senha .campo-input label {}
+
+form.entrar-conta fieldset.campo-esqueceu-senha a {
+    color: #4d61fc;
+}
+
+form.entrar-conta .campo-entrar {}
+
+form.entrar-conta .campo-entrar input {}
+
+form.entrar-conta .campo-entrar i {}
+
+/* SEÇÃO CRIAR CONTA */
+section.secao-criar-conta {
+    width: 410px;
+}
+
+section.secao-criar-conta .cadastro {}
+
+section.secao-criar-conta .cadastro .logo-entrar {}
+
+section.secao-criar-conta .cadastro .logo-entrar i {}
+
+section.secao-criar-conta .cadastro h2 {}
+
+/* FORMULÁRIO CRIAR CONTA */
+form.cadastro-conta {}
+
+form.cadastro-conta .campo-input {}
+
+form.cadastro-conta .campo-input label {}
+
+form.cadastro-conta .campo-input input {}
+
+form.cadastro-conta .campo-input .logo {}
+
+form.cadastro-conta .campo-criar {}
+
+form.cadastro-conta .campo-criar input {}
+
+form.cadastro-conta .campo-criar i {}
+
+form.cadastro-conta .campo-criar i {}
+
+section.secao-criar-conta p {}
+
+section.secao-criar-conta .logos-social {}
+
+section.secao-criar-conta .logos-social i {}
