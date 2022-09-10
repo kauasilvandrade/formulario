@@ -101,23 +101,79 @@ form.entrar-conta fieldset.campo-esqueceu-senha {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 2rem;
 }
 
 form.entrar-conta fieldset.campo-esqueceu-senha .campo-input {}
 
-form.entrar-conta fieldset.campo-esqueceu-senha .campo-input input {}
+form.entrar-conta fieldset.campo-esqueceu-senha .campo-input input {
+    display: none;
+}
 
-form.entrar-conta fieldset.campo-esqueceu-senha .campo-input label {}
+form.entrar-conta fieldset.campo-esqueceu-senha .campo-input input[type="checkbox"] + label::before {
+    content: '✔';
+    color: transparent;
+    text-align: center;
+    line-height: 1.5em;
+    width: 18px;
+    height: 18px;
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 0.3rem;
+    border-radius: 3px;
+    border: none;
+    font-size: 0.8em;
+    border: 1px solid #e2e2e2;
+}
+
+form.entrar-conta fieldset.campo-esqueceu-senha .campo-input input[type="checkbox"]:checked +  label::before {
+    background-color: #4d61fc;
+    color: white;
+    transition: .3s;
+    transform: scale(1);
+}
+
+form.entrar-conta fieldset.campo-esqueceu-senha .campo-input label {
+    color: #555;
+}
 
 form.entrar-conta fieldset.campo-esqueceu-senha a {
     color: #4d61fc;
 }
 
-form.entrar-conta .campo-entrar {}
+form.entrar-conta .campo-entrar {
+    position: relative;
+    width: 50%;
+}
 
-form.entrar-conta .campo-entrar input {}
+form.entrar-conta .campo-entrar:hover {
+    transform: translateY(-4px);
+    transition: transform .5s ease;
+}
 
-form.entrar-conta .campo-entrar i {}
+form.entrar-conta .campo-entrar input {
+    background-color: #4d61fc;
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 0.8rem 0.7rem;
+    border-radius: 4px;
+    color: white;
+    font-size: 1.1em;
+}
+
+form.entrar-conta .campo-entrar input:hover {
+    background: #2036de;
+}
+
+form.entrar-conta .campo-entrar i {
+    position: absolute;
+    font-size: 1.3em;
+    top: 0.8rem;
+    color: white;
+    right: 2rem;
+}
 
 /* SEÇÃO CRIAR CONTA */
 section.secao-criar-conta {
