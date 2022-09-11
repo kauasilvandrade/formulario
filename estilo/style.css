@@ -82,7 +82,6 @@ form.entrar-conta > .campo-input input {
     border: none;
     outline: none;
     padding: 0.7rem 1rem;
-    
 }
 
 form.entrar-conta > .campo-input label.logo {
@@ -94,6 +93,31 @@ form.entrar-conta > .campo-input label.logo {
 
 form.entrar-conta > .campo-input label.logo i {
     font-size: 1.1em;
+}
+
+form.entrar-conta > .campo-input .underline::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -1px;
+}
+
+form.entrar-conta > .campo-input .underline::after{
+    content: '';
+    background-image: linear-gradient(109.6deg, #7412cb 11.2%, #e62e83 91.2%);
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -1px;
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+}
+
+form.entrar-conta > .campo-input input:focus ~ .underline::after {
+    transform: scaleX(1);
 }
 
 form.entrar-conta fieldset.campo-esqueceu-senha {
@@ -200,7 +224,7 @@ section.secao-criar-conta .cadastro .logo-entrar i {
 }
 
 section.secao-criar-conta .cadastro h2 {
-    font-size: 2.5em;
+    font-size: 1.5em;
     font-weight: 600;
     margin-bottom: 1.5rem;
 }
