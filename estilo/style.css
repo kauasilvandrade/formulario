@@ -325,6 +325,7 @@ section.secao-criar-conta .logos-social .redes {
 section.secao-criar-conta .logos-social p {
     margin-bottom: 0.5rem;
     text-align: center;
+    width: 100%;
 }
 
 /* RESPONSIVIDADE */
